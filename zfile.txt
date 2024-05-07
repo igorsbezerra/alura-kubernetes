@@ -1,0 +1,8 @@
+POD: unidade minima de execucao de um container
+SERVICE: Controla o acesso
+    ClusterIP: Acessivel apenas dentro do cluster
+    NodePort: Acessivel dentro do container e fora atraves de um porta configurada na propriedade NodePort
+    LoadBalancer: Apenas cloud
+CONFIGMAP: Configuracao de variaveis de ambiente do POD
+REPLICASET: Controla a disponiblidade do pod e quantidade de pods ativos
+DEPLOYMENTS: Igual ao Replicaset, inclusive e criado um replicaset, mas com adicional de controle de versao das imagens do pod
